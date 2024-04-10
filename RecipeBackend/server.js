@@ -6,7 +6,7 @@ const MongoClient = mongodb.MongoClient;
 const uri = 'mongodb://localhost:27017';
 const dbName = 'recipe_database';
 
-MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
+MongoClient.connect(uri, (err, client) => {
     if (err) {
         console.error('Error connecting to MongoDB:', err);
         return;
