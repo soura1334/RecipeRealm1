@@ -3,3 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+.Container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
