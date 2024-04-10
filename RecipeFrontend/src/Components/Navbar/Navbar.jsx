@@ -26,7 +26,7 @@ const Navbar = () => {
         </ul>
       </div>
       </div>
-      <nav className={`container ${sticky ? "dark-nav" : ""}`}>
+      <nav className={`Container ${sticky ? "dark-nav" : ""}`}>
         <img
           src={logo}
           alt=""
