@@ -15,16 +15,21 @@ const Navbar = () => {
 
   return (
     <>
-    <div className={`${side?'cover':''}`}>
-      <div className={`side ${side?'':'hide-side'}`}>
-        <ul>
-          <li>
-            <img src="" alt="" />
-          </li>
-          <li>Your Profile</li>
-          <li>Your Favorites</li>
-        </ul>
-      </div>
+      <div
+        className={`${side ? "cover" : ""}`}
+        onClick={(e) => {
+          setSide(false);
+        }}
+      >
+        <div className={`side ${side ? "" : "hide-side"}`}>
+          <ul>
+          <Link to="/profile"><li>
+              <img src="" alt="" />
+            </li></Link>
+            <Link to="/profile"><li>Your Profile</li></Link>
+            <li>Your Favorites</li>
+          </ul>
+        </div>
       </div>
       <nav className={`Container ${sticky ? "dark-nav" : ""}`}>
         <img
@@ -35,9 +40,15 @@ const Navbar = () => {
           }}
         />
         <ul>
-          <Link to="/"><li>Home</li></Link>
-          <Link to="/about"><li>About</li></Link>
-          <Link to="/contact"><li>Contact</li></Link>
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link to="/about">
+            <li>About</li>
+          </Link>
+          <Link to="/contact">
+            <li>Contact</li>
+          </Link>
         </ul>
       </nav>
     </>

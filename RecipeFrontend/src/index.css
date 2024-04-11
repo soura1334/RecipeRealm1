@@ -7,3 +7,6 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+a:link,a:hover,a:visited,a:active{
+  text-decoration: none;
+}

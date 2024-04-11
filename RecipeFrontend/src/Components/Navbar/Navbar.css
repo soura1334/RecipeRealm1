@@ -26,7 +26,7 @@ img {
     top: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(231, 231, 233, 0.1));
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(231, 231, 233, 0.2));
     z-index: 5;
     width: 200px;
     padding-top: 70px;
@@ -41,7 +41,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.347);
+    background: rgba(0, 0, 0, 0.433);
     z-index: 4;
     transition: 0.6s;
 }
@@ -51,4 +51,20 @@ img {
 }
 .dark-nav ul li{
   color: #c45b19;
+}
+.side ul li{
+  list-style: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 8px;
+  font-size: larger;
+  text-decoration: none;
+}
+.side ul li img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   margin-bottom: 40px;
 }

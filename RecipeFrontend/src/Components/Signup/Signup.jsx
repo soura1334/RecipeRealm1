@@ -1,18 +1,24 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from 'axios'
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const navigate = useNavigate();
 
-  const handelSubmit=(e)=>{
-    e.preventDefault()
-    axios.post('http://localhost:3001/register',{name,email,password})
-    .then(result=> console.log(result))
-    .catch(err=>console.log(err))
-  }
+  const handelSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:3001/register", { name, email, password })
+      .then((result) => {
+        console.log(result);
+        navigate("/login");
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
@@ -29,8 +35,8 @@ const Signup = () => {
               autoComplete="off"
               name="name"
               className="form-control rounded-0"
-              onChange={(e)=>{
-                setName(e.target.value)
+              onChange={(e) => {
+                setName(e.target.value);
               }}
             />
           </div>
@@ -44,8 +50,8 @@ const Signup = () => {
               autoComplete="off"
               name="email"
               className="form-control rounded-0"
-              onChange={(e)=>{
-                setEmail(e.target.value)
+              onChange={(e) => {
+                setEmail(e.target.value);
               }}
             />
           </div>
@@ -58,8 +64,8 @@ const Signup = () => {
               name="password"
               placeholder="Enter Password"
               className="form-control rounded-0"
-              onChange={(e)=>{
-                setPassword(e.target.value)
+              onChange={(e) => {
+                setPassword(e.target.value);
               }}
             />
           </div>

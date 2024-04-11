@@ -1,0 +1,16 @@
+.profile{
+    width: 70%;
+    height: 50%;
+    max-width: 1200px;
+    max-height: 700px;
+    /* display: grid;
+    grid-column: 2; */
+}
+.profilePic{
+    background-color: brown;
+    height: 100%;
+}
+.profileAbout{
+    background-color: red;
+    height: 100%;
+}

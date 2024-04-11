@@ -7,6 +7,7 @@ import Contact from "./Components/Contact/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Signup from "./Components/Signup/Signup";
 import Login from "./Components/Login/Login";
+import Profile from "./Components/Profile/Profile";
 
 
 function App() {
@@ -45,6 +46,10 @@ function App() {
     {
       path:'/login',
       element:<Login/>
+    },
+    {
+      path:'/profile',
+      element:<Profile/>
     },
   ]);
 
