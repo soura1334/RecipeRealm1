@@ -4,11 +4,10 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 import Signup from "./Components/Signup/Signup";
 import Login from "./Components/Login/Login";
 import Profile from "./Components/Profile/Profile";
-
 
 function App() {
   const router = createBrowserRouter([
@@ -35,21 +34,26 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Contact/>
+          <Contact />
         </>
       ),
     },
     {
-      path:'/register',
-      element:<Signup/>
+      path: "/register",
+      element: <Signup />,
     },
     {
-      path:'/login',
-      element:<Login/>
+      path: "/login",
+      element: <Login />,
     },
     {
-      path:'/profile',
-      element:<Profile/>
+      path: "/profile",
+      element: (
+        <>
+          <Navbar />
+          <Profile />
+        </>
+      ),
     },
   ]);
 
