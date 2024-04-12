@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
@@ -15,19 +15,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// Multer setup for file uploads
 const storage = multer.diskStorage({
   destination: function(req, file, cb) {
     cb(null, 'public/images/')
   },
   filename: function(req, file, cb) {
-    cb(null, Date.now() + path.extname(file.originalname)) //Appending extension
+    cb(null, Date.now() + path.extname(file.originalname))
   }
 });
 
 const upload = multer({ storage: storage });
 
-// Routes
 app.use('/api/recipes', require('./routes/recipes'));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
