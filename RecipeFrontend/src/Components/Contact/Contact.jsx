@@ -5,9 +5,10 @@ const Contact = () => {
   return (
     <div className='contact'>
       <h1>Contact With Us</h1>
-      <p>We would love to respond to your queries.Feel free to get in touch with us.</p>
-      <div class="contact-box">
-        <div class="contact-left">
+      <p>We would love to respond to your queries. <br />
+        Feel free to get in touch with us.</p>
+      <div className="contact-box">
+        <div className="contact-left">
           <h3>Send your request</h3>
           <form>
             <div className="input-row">
@@ -15,23 +16,25 @@ const Contact = () => {
                 <label>Name</label>
                 <input type="text" placeholder="Your Name Here" />
               </div>
-              <div class="input-group">
-                <label>Pnone No.</label>
+              <div className="input-group">
+                <label>Phone No.</label>
                 <input type="text" placeholder="Your Contact No." />
               </div>
-              <div class="input-group">
+            </div>
+            <div className="input-row">
+              <div className="input-group">
                 <label>E-mail</label>
                 <input type="text" placeholder="Your E-mail" />
               </div>
-              <div class="input-group">
-                <label>Message</label>
-                <textarea rows="10" placeholder="Your message here"></textarea>
-              </div>
             </div>
+                <div className="input-group">
+                  <label>Message</label>
+                  <textarea rows="10" placeholder="Your message here"></textarea>
+                </div>
             <button type="submit">SEND</button>
           </form>
         </div>
-        <div class="contact-right">
+        <div className="contact-right">
           <h3>Reach Us</h3>
           <table>
             <tr>
