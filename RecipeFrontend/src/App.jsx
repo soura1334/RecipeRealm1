@@ -24,7 +24,7 @@ function App() {
       path: "/about",
       element: (
         <>
-          <Navbar />
+          <Navbar hide={false}/>
           <About />
         </>
       ),
@@ -33,7 +33,7 @@ function App() {
       path: "/contact",
       element: (
         <>
-          <Navbar />
+          <Navbar hide={false}/>
           <Contact />
         </>
       ),
@@ -50,7 +50,7 @@ function App() {
       path: "/profile",
       element: (
         <>
-          <Navbar />
+          <Navbar hide={false}/>
           <Profile />
         </>
       ),

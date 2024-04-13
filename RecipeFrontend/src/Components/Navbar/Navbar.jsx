@@ -3,7 +3,7 @@ import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({hide}) => {
   const [side, setSide] = useState(false);
 
   const [sticky, setSticky] = useState(false);
@@ -23,15 +23,23 @@ const Navbar = () => {
       >
         <div className={`side ${side ? "" : "hide-side"}`}>
           <ul>
-          <Link to="/profile"><li>
-              <img src="" alt="" />
-            </li></Link>
-            <Link to="/profile"><li>Your Profile</li></Link>
+            <Link to="/profile">
+              <li>
+                <img src="" alt="" />
+              </li>
+            </Link>
+            <Link to="/profile">
+              <li>Your Profile</li>
+            </Link>
             <li>Your Favorites</li>
           </ul>
         </div>
       </div>
-      <nav className={`Container ${sticky ? "dark-nav" : ""}`}>
+      <nav
+        className={`Container ${sticky ? "dark-nav" : ""} ${
+          hide ? "": "dark-nav" 
+        }`}
+      >
         <img
           src={logo}
           alt=""
