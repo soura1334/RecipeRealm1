@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="contact-body">
     <div className='contact'>
-      <h1>Contact With Us</h1>
+      <h1 className='contact-text'>Contact With Us</h1>
       <p>We would love to respond to your queries. <br />
         Feel free to get in touch with us.</p>
       <div className="contact-box">
@@ -14,25 +14,25 @@ const Contact = () => {
           <form>
             <div className="input-row">
               <div className="input-group">
-                <label>Name</label>
+                <label className='label'>Name</label>
                 <input className="input" type="text" placeholder="Your Name Here" />
               </div>
               <div className="input-group">
-                <label>Phone No.</label>
+                <label className='label'>Phone No.</label>
                 <input className="input" type="text" placeholder="Your Contact No." />
               </div>
             </div>
             <div className="input-row">
               <div className="input-group">
-                <label>E-mail</label>
+                <label className='label'>E-mail</label>
                 <input className="input" type="text" placeholder="Your E-mail" />
               </div>
             </div>
                 <div className="input-group">
-                  <label>Message</label>
-                  <textarea rows="10" placeholder="Your message here"></textarea>
+                  <label className='label'>Message</label>
+                  <textarea className='textarea' rows="10" placeholder="Your message here"></textarea>
                 </div>
-            <button type="submit">SEND</button>
+            <button className='send' type="submit">SEND</button>
           </form>
         </div>
         <div className="contact-right">

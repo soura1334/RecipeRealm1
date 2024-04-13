@@ -35,7 +35,7 @@
   color: #fff;
 }
 
-h1 {
+.contact-text {
   margin-bottom: 10px;
 }
 
@@ -61,7 +61,7 @@ h1 {
   padding-bottom: 5px;
 }
 
-textarea {
+.textarea {
   width: 100%;
   border: 1px solid black;
   outline: none;
@@ -69,22 +69,29 @@ textarea {
   box-sizing: border-box;
 }
 
-label {
+.label {
   margin-bottom: 6px;
   display: block;
   color: #1c00b5;
 }
 
-button {
-  background: #1c00b5;
-  width: 100px;
-  border: none;
-  outline: none;
+.send {
+  margin-top: 10px;
+  width: 120px;
+  height: 40px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1 em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+}
+button.send:hover {
+  background: #315cfd;
   color: white;
-  height: 35px;
-  border-radius: 30px;
-  margin-top: 20px;
-  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+  font-size: 1.2em;
 }
   .contact-left h3 {
   color: #1c00b5;
