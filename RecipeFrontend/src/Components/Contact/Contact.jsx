@@ -3,6 +3,7 @@ import "./Contact.css"
 
 const Contact = () => {
   return (
+    <div className="contact-body">
     <div className='contact'>
       <h1>Contact With Us</h1>
       <p>We would love to respond to your queries. <br />
@@ -14,17 +15,17 @@ const Contact = () => {
             <div className="input-row">
               <div className="input-group">
                 <label>Name</label>
-                <input type="text" placeholder="Your Name Here" />
+                <input className="input" type="text" placeholder="Your Name Here" />
               </div>
               <div className="input-group">
                 <label>Phone No.</label>
-                <input type="text" placeholder="Your Contact No." />
+                <input className="input" type="text" placeholder="Your Contact No." />
               </div>
             </div>
             <div className="input-row">
               <div className="input-group">
                 <label>E-mail</label>
-                <input type="text" placeholder="Your E-mail" />
+                <input className="input" type="text" placeholder="Your E-mail" />
               </div>
             </div>
                 <div className="input-group">
@@ -54,6 +55,7 @@ const Contact = () => {
           </table>
         </div>
       </div>
+    </div>
     </div>
   )
 }

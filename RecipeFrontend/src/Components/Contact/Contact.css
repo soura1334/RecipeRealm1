@@ -1,7 +1,17 @@
+.contact-body{
+  background-color: #83f2f2;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact {
   font-size: 15px;
   width: 80%;
-  margin: 50px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -9,7 +19,7 @@
 }
 
 .contact-box {
-  background-color: #83f2f2;
+  background-color: #fff;
   display: flex;
 }
 
@@ -43,7 +53,7 @@ h1 {
   flex-basis: 45%;
 }
 
-input {
+.input {
   width: 100%;
   border: none;
   border-bottom: 1px solid black;
